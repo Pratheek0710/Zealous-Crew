@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The ZEALOUS Crew</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      background: #181818;
+      color: #fff;
+      font-family: 'Bangers', cursive;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    img {
+      width: 160px;
+      margin-bottom: 25px;
+      filter: drop-shadow(0 0 12px rgba(255, 30, 30, 0.6))
+              drop-shadow(0 0 25px rgba(255, 30, 30, 0.4));
+      animation: glowFlicker 1.2s linear infinite alternate;
+    }
+
+    h1 {
+      color: #fff;
+      letter-spacing: 3px;
+      font-size: 3.2em;
+      margin: 10px 0 0;
+      text-shadow: 0 0 12px #ff1e1e, 0 0 30px #ff7b54;
+      animation: glowFlicker 1.2s linear infinite alternate;
+    }
+
+    @keyframes glowPulse {
+      from {
+        filter: drop-shadow(0 0 8px rgba(255, 30, 30, 0.4))
+                drop-shadow(0 0 18px rgba(255, 30, 30, 0.2));
+        text-shadow:
+          0 0 10px rgba(255, 30, 30, 0.5),
+          0 0 25px rgba(255, 30, 30, 0.3);
+      }
+      to {
+        filter: drop-shadow(0 0 14px rgba(255, 30, 30, 0.8))
+                drop-shadow(0 0 30px rgba(255, 30, 30, 0.5));
+        text-shadow:
+          0 0 18px rgba(255, 30, 30, 0.9),
+          0 0 35px rgba(255, 30, 30, 0.6);
+      }
+    }
+
+    p {
+      margin: 15px 0 40px;
+      font-size: 1.2em;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+    }
+
+    .glow-btn {
+      display: block;
+      position: relative;
+      margin: 15px 0;
+      padding: 14px 28px;
+      width: 250px;
+      color: #fff;
+      border: 2px solid #ff1e1e;
+      background: #ff1e1e;
+      border-radius: 50px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #ff7b54;
+      overflow: hidden;
+    }
+
+    .glow-btn::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -75%;
+      width: 50%;
+      height: 200%;
+      background: rgba(255, 30, 30, 0.25);
+      transform: skewX(-20deg) translateY(-50%);
+      transition: 0.5s;
+    }
+
+    .glow-btn:hover::before {
+      left: 125%;
+    }
+
+    .glow-btn:hover {
+      color: #fff;
+      background: #ff7b54;
+      box-shadow: 0 0 20px #ff1e1e, 0 0 35px #ff7b54;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.95em;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      text-shadow: 0 0 8px #ff1e1e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="zealous_logo.png" alt="Zealous Crew Logo">
+    <h1>The ZEALOUS Crew</h1>
+    <p>Catch our vibe 🔥 — here’s everything Zealous!</p>
+
+    <a href="https://www.instagram.com/the_zealous_crew?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="glow-btn">“Don’t just scroll—connect! Join our Insta fam!!”</a>
+    <a href="https://drive.google.com/drive/folders/1nLJQljTLODOO1qLOAZEnxKjREpOpCafc?usp=drive_link" target="_blank" class="glow-btn">Every Act, Every Moment – Start Watching</a>
+    <p style="margin-top: 10px; font-size: 1.1em; color: #888; font-family: 'Poppins', sans-serif; font-weight:600;">
+      The Stage Awaits – Audition Promo Launching Soon!!
+    </p>
+
+    <footer>This Crew. This Stage. All the Energy You Need<br>The ZEALOUS Crew ❤️‍🔥❤️‍🔥</footer>
+  </div>
+</body>
+</html>
